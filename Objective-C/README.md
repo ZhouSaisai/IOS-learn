@@ -4,3 +4,4 @@
 
 HelloWorld-OOP部分-类和对象
 
+GlegateTest-OOP部分-协议
