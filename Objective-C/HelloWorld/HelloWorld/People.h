@@ -20,4 +20,19 @@
 //- (void)setName:(NSString *)name;
 //- (NSString*)getName;
 
+/*
+ -对象方法，+类方法
+ */
+- (void) report;
++ (void) report1;
+
+-(int) showA:(int)a;
+
+//函数名 showA: andB:
+-(int) showA:(int)a andB:(int)b;
+
+//初始化
+- (instancetype)init;
+//自定义初始化
+- (instancetype)initName:(NSString*)str addAge:(int)age;
 @end

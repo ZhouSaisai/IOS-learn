@@ -22,9 +22,18 @@ int main(int argc, const char * argv[]) {
         NSLog(@"p:%@",p1);
         p1.name = @"zhangsan";
         
-        [p1 setName:@"lieei"];
-        NSLog(@"pname:%@",p1.name);
+//        [p1 setName:@"lieei"];
+//        NSLog(@"pname:%@",p1.name);
 //        NSLog(@"pname:%@",[p1 getName]);
+        
+//        
+//        [p1 report];
+//        [People report1];
+        
+        int a1= [p1 showA:10];
+        NSLog(@"a1= %d",a1);
+        int a2= [p1 showA:10 andB:20];
+        NSLog(@"a2= %d",a2);
     }
 
     return 0;

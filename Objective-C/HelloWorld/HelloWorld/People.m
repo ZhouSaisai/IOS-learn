@@ -31,5 +31,20 @@
 //{
 //   return _name;
 //}
+
+- (void) report{
+    NSLog(@"report");
+}
+
++ (void) report1{
+     NSLog(@"report1");
+}
+
+-(int) showA:(int)a{
+    return a;
+}
+-(int) showA:(int)a andB:(int)b{
+    return a+b;
+}
 @end
 
