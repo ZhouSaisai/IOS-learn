@@ -10,7 +10,7 @@
 #import "MVPView.h"
 #import "Presenter.h"
 #import "MVPModel.h"
-
+#import "ServiceFactory.h"
 @interface MVPController()
 
 @property (nonatomic,strong) Presenter* presenter;
@@ -31,8 +31,13 @@
     _mvpView.frame = self.view.bounds;
     [self.view addSubview:_mvpView];
     
-    self.mvpModel = [MVPModel new];
-    _mvpModel.content = @"mvp first";
+//    mvp原来实现
+//    self.mvpModel = [MVPModel new];
+//    _mvpModel.content = @"mvp first";
+    
+    //分层修改
+    //从service 获取model
+    self.mvpModel = [[ServiceFactory sharedInstance].printService getPrintModel];
     
     _presenter.view = _mvpView;
     _presenter.model = _mvpModel;

@@ -21,6 +21,11 @@
 		5B7F429B1F480DC500CEE766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7F42991F480DC500CEE766 /* LaunchScreen.storyboard */; };
 		5B7F42A41F48104800CEE766 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F42A31F48104800CEE766 /* Manager.m */; };
 		5B7F42A71F48109400CEE766 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F42A61F48109400CEE766 /* Employee.m */; };
+		5B84B81A1F4D9AA400BD42F7 /* PrintController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84B8191F4D9AA400BD42F7 /* PrintController.m */; };
+		5B84B81D1F4D9B8800BD42F7 /* ServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84B81C1F4D9B8800BD42F7 /* ServiceFactory.m */; };
+		5B84B8201F4D9BD000BD42F7 /* PrintService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84B81F1F4D9BD000BD42F7 /* PrintService.m */; };
+		5B84B8231F4D9F1300BD42F7 /* DataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84B8221F4D9F1300BD42F7 /* DataFactory.m */; };
+		5B84B8261F4D9F7D00BD42F7 /* PrintDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B84B8251F4D9F7D00BD42F7 /* PrintDAO.m */; };
 		5B8727D51F4824B70004BE71 /* MVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8727D41F4824B70004BE71 /* MVCController.m */; };
 		5B8727D81F4825BF0004BE71 /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8727D71F4825BF0004BE71 /* MVCView.m */; };
 		5B8727DB1F4825EC0004BE71 /* Paper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8727DA1F4825EC0004BE71 /* Paper.m */; };
@@ -58,6 +63,16 @@
 		5B7F42A31F48104800CEE766 /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 		5B7F42A51F48109400CEE766 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		5B7F42A61F48109400CEE766 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		5B84B8181F4D9AA400BD42F7 /* PrintController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintController.h; sourceTree = "<group>"; };
+		5B84B8191F4D9AA400BD42F7 /* PrintController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintController.m; sourceTree = "<group>"; };
+		5B84B81B1F4D9B8800BD42F7 /* ServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFactory.h; sourceTree = "<group>"; };
+		5B84B81C1F4D9B8800BD42F7 /* ServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFactory.m; sourceTree = "<group>"; };
+		5B84B81E1F4D9BD000BD42F7 /* PrintService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintService.h; sourceTree = "<group>"; };
+		5B84B81F1F4D9BD000BD42F7 /* PrintService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintService.m; sourceTree = "<group>"; };
+		5B84B8211F4D9F1300BD42F7 /* DataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFactory.h; sourceTree = "<group>"; };
+		5B84B8221F4D9F1300BD42F7 /* DataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFactory.m; sourceTree = "<group>"; };
+		5B84B8241F4D9F7D00BD42F7 /* PrintDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintDAO.h; sourceTree = "<group>"; };
+		5B84B8251F4D9F7D00BD42F7 /* PrintDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintDAO.m; sourceTree = "<group>"; };
 		5B8727CE1F481FE70004BE71 /* PrintNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintNotification.h; sourceTree = "<group>"; };
 		5B8727D31F4824B70004BE71 /* MVCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCController.h; sourceTree = "<group>"; };
 		5B8727D41F4824B70004BE71 /* MVCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCController.m; sourceTree = "<group>"; };
@@ -133,8 +148,10 @@
 		5B7F428A1F480DC500CEE766 /* PrintDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5B84B8171F4D9A8500BD42F7 /* DataLayer */,
+				5B84B8161F4D9A7700BD42F7 /* ServiceLayer */,
+				5B84B8151F4D9A5B00BD42F7 /* ApplicationLayer */,
 				5B2EA4D01F49D67E0060E2C4 /* MVVM */,
-				5B8727DC1F4853180004BE71 /* MVP */,
 				5B8727CF1F48243E0004BE71 /* MVC */,
 				5B7F428E1F480DC500CEE766 /* AppDelegate.h */,
 				5B7F428F1F480DC500CEE766 /* AppDelegate.m */,
@@ -160,6 +177,38 @@
 				5B7F428C1F480DC500CEE766 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B84B8151F4D9A5B00BD42F7 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5B8727DC1F4853180004BE71 /* MVP */,
+				5B84B8181F4D9AA400BD42F7 /* PrintController.h */,
+				5B84B8191F4D9AA400BD42F7 /* PrintController.m */,
+			);
+			name = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		5B84B8161F4D9A7700BD42F7 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5B84B81B1F4D9B8800BD42F7 /* ServiceFactory.h */,
+				5B84B81C1F4D9B8800BD42F7 /* ServiceFactory.m */,
+				5B84B81E1F4D9BD000BD42F7 /* PrintService.h */,
+				5B84B81F1F4D9BD000BD42F7 /* PrintService.m */,
+			);
+			name = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		5B84B8171F4D9A8500BD42F7 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5B84B8211F4D9F1300BD42F7 /* DataFactory.h */,
+				5B84B8221F4D9F1300BD42F7 /* DataFactory.m */,
+				5B84B8241F4D9F7D00BD42F7 /* PrintDAO.h */,
+				5B84B8251F4D9F7D00BD42F7 /* PrintDAO.m */,
+			);
+			name = DataLayer;
 			sourceTree = "<group>";
 		};
 		5B8727CF1F48243E0004BE71 /* MVC */ = {
@@ -264,9 +313,13 @@
 			files = (
 				5B8727E51F4858200004BE71 /* MVPView.m in Sources */,
 				5B2EA4D61F49D6B90060E2C4 /* MVVMController.m in Sources */,
+				5B84B8231F4D9F1300BD42F7 /* DataFactory.m in Sources */,
 				5B8727E21F4856DC0004BE71 /* Presenter.m in Sources */,
 				5B7F42A71F48109400CEE766 /* Employee.m in Sources */,
+				5B84B8261F4D9F7D00BD42F7 /* PrintDAO.m in Sources */,
+				5B84B81D1F4D9B8800BD42F7 /* ServiceFactory.m in Sources */,
 				5B8727D81F4825BF0004BE71 /* MVCView.m in Sources */,
+				5B84B8201F4D9BD000BD42F7 /* PrintService.m in Sources */,
 				5B8727DB1F4825EC0004BE71 /* Paper.m in Sources */,
 				5B2EA4E21F49ED040060E2C4 /* MVVMView.m in Sources */,
 				5B8727E81F48584D0004BE71 /* MVPModel.m in Sources */,
@@ -276,6 +329,7 @@
 				5B2EA4D91F49D71E0060E2C4 /* MVVMPaper.m in Sources */,
 				5B2619EE1F4B2A2600F8CCED /* NSObject+FBKVOController.m in Sources */,
 				5B2619ED1F4B2A2600F8CCED /* FBKVOController.m in Sources */,
+				5B84B81A1F4D9AA400BD42F7 /* PrintController.m in Sources */,
 				5B2EA4DC1F49D73C0060E2C4 /* MVVMViewModel.m in Sources */,
 				5B7F42901F480DC500CEE766 /* AppDelegate.m in Sources */,
 				5B7F428D1F480DC500CEE766 /* main.m in Sources */,
